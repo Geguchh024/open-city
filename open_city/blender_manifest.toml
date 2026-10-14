@@ -1,0 +1,17 @@
+schema_version = "1.0.0"
+
+id = "open_city"
+version = "0.3.0"
+name = "Open City"
+tagline = "Modular small-town generator: streets, shops, houses, parks"
+maintainer = "Open City contributors"
+type = "add-on"
+
+tags = ["Geometry Nodes", "Modeling", "Scene"]
+
+blender_version_min = "5.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "*.pyc"]
