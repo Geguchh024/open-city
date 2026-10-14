@@ -6,6 +6,7 @@
 hero.png      the Main Street preset from the air
 street.png    standing on the main street
 corner.png    a street corner close up: storefronts, signs, crossings, street furniture
+night.png     the main street at night: lit windows, glowing signs, lamps and headlights
 modular.png   one building kit at different sizes, and the roof and tower variants
 presets.png   every preset in one sheet
 """
@@ -196,6 +197,10 @@ if __name__ == "__main__":
     cx = (plan.extent[0] + plan.extent[1]) / 2
     camera((cx - 22, plan.main.centre - 26, 14), (cx - 4, plan.main.centre + 4, 5.0), lens=30)
     render(os.path.join(OUT, "corner.png"))
+    bpy.context.scene.frame_set(48)               # the traffic part way round its loops
+    stage.setup(bpy.context.scene, night=True)
+    camera((X0 + 4, plan.main.centre - 9, 11), (X0 + 46, plan.main.centre + 3, 2.0), lens=28)
+    render(os.path.join(OUT, "night.png"))
 
     modular_sheet(tmp)
 

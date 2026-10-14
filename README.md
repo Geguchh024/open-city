@@ -10,6 +10,8 @@ made wider, deeper or taller without anything being stretched.
 
 ![On the main street](docs/images/street.png)
 
+![The main street at night](docs/images/night.png)
+
 ## Features
 
 - **Modular buildings.** Facades are grids of bays and floors. Each slot takes a module (sash, arched
